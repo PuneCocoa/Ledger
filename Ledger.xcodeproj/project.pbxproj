@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA6A1D841843618A00C7E285 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D831843618A00C7E285 /* Foundation.framework */; };
+		FA6A1D861843618A00C7E285 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D851843618A00C7E285 /* CoreGraphics.framework */; };
+		FA6A1D881843618A00C7E285 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D871843618A00C7E285 /* UIKit.framework */; };
+		FA6A1D8E1843618A00C7E285 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6A1D8C1843618A00C7E285 /* InfoPlist.strings */; };
+		FA6A1D901843618A00C7E285 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A1D8F1843618A00C7E285 /* main.m */; };
+		FA6A1D941843618A00C7E285 /* LEDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A1D931843618A00C7E285 /* LEDAppDelegate.m */; };
+		FA6A1D961843618A00C7E285 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6A1D951843618A00C7E285 /* Images.xcassets */; };
+		FA6A1D9D1843618A00C7E285 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D9C1843618A00C7E285 /* XCTest.framework */; };
+		FA6A1D9E1843618A00C7E285 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D831843618A00C7E285 /* Foundation.framework */; };
+		FA6A1D9F1843618A00C7E285 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D871843618A00C7E285 /* UIKit.framework */; };
+		FA6A1DA71843618A00C7E285 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA6A1DA51843618A00C7E285 /* InfoPlist.strings */; };
+		FA6A1DA91843618A00C7E285 /* LedgerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A1DA81843618A00C7E285 /* LedgerTests.m */; };
+		FA6A1DBB1843622D00C7E285 /* LEDAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A1DBA1843622D00C7E285 /* LEDAccountsViewController.m */; };
+		FA6A1DBE1843624200C7E285 /* LEDAccountsView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A1DBD1843624200C7E285 /* LEDAccountsView.m */; };
+		FA6A1DC11843640000C7E285 /* LEDAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A1DC01843640000C7E285 /* LEDAccount.m */; };
+		FA6A1DC4184365E700C7E285 /* LEDTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A1DC3184365E700C7E285 /* LEDTransaction.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA6A1DA01843618A00C7E285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA6A1D781843618A00C7E285 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA6A1D7F1843618A00C7E285;
+			remoteInfo = Ledger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA6A1D801843618A00C7E285 /* Ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6A1D831843618A00C7E285 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA6A1D851843618A00C7E285 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA6A1D871843618A00C7E285 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA6A1D8B1843618A00C7E285 /* Ledger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ledger-Info.plist"; sourceTree = "<group>"; };
+		FA6A1D8D1843618A00C7E285 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA6A1D8F1843618A00C7E285 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA6A1D911843618A00C7E285 /* Ledger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ledger-Prefix.pch"; sourceTree = "<group>"; };
+		FA6A1D921843618A00C7E285 /* LEDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDAppDelegate.h; sourceTree = "<group>"; };
+		FA6A1D931843618A00C7E285 /* LEDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEDAppDelegate.m; sourceTree = "<group>"; };
+		FA6A1D951843618A00C7E285 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA6A1D9B1843618A00C7E285 /* LedgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LedgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6A1D9C1843618A00C7E285 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA6A1DA41843618A00C7E285 /* LedgerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LedgerTests-Info.plist"; sourceTree = "<group>"; };
+		FA6A1DA61843618A00C7E285 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA6A1DA81843618A00C7E285 /* LedgerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LedgerTests.m; sourceTree = "<group>"; };
+		FA6A1DB91843622D00C7E285 /* LEDAccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDAccountsViewController.h; sourceTree = "<group>"; };
+		FA6A1DBA1843622D00C7E285 /* LEDAccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDAccountsViewController.m; sourceTree = "<group>"; };
+		FA6A1DBC1843624200C7E285 /* LEDAccountsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDAccountsView.h; sourceTree = "<group>"; };
+		FA6A1DBD1843624200C7E285 /* LEDAccountsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDAccountsView.m; sourceTree = "<group>"; };
+		FA6A1DBF1843640000C7E285 /* LEDAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDAccount.h; sourceTree = "<group>"; };
+		FA6A1DC01843640000C7E285 /* LEDAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDAccount.m; sourceTree = "<group>"; };
+		FA6A1DC2184365E700C7E285 /* LEDTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDTransaction.h; sourceTree = "<group>"; };
+		FA6A1DC3184365E700C7E285 /* LEDTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDTransaction.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA6A1D7D1843618A00C7E285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A1D861843618A00C7E285 /* CoreGraphics.framework in Frameworks */,
+				FA6A1D881843618A00C7E285 /* UIKit.framework in Frameworks */,
+				FA6A1D841843618A00C7E285 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6A1D981843618A00C7E285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A1D9D1843618A00C7E285 /* XCTest.framework in Frameworks */,
+				FA6A1D9F1843618A00C7E285 /* UIKit.framework in Frameworks */,
+				FA6A1D9E1843618A00C7E285 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA6A1D771843618A00C7E285 = {
+			isa = PBXGroup;
+			children = (
+				FA6A1D891843618A00C7E285 /* Ledger */,
+				FA6A1DA21843618A00C7E285 /* LedgerTests */,
+				FA6A1D821843618A00C7E285 /* Frameworks */,
+				FA6A1D811843618A00C7E285 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA6A1D811843618A00C7E285 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A1D801843618A00C7E285 /* Ledger.app */,
+				FA6A1D9B1843618A00C7E285 /* LedgerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA6A1D821843618A00C7E285 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A1D831843618A00C7E285 /* Foundation.framework */,
+				FA6A1D851843618A00C7E285 /* CoreGraphics.framework */,
+				FA6A1D871843618A00C7E285 /* UIKit.framework */,
+				FA6A1D9C1843618A00C7E285 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA6A1D891843618A00C7E285 /* Ledger */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A1DB2184361B700C7E285 /* Classes */,
+				FA6A1D921843618A00C7E285 /* LEDAppDelegate.h */,
+				FA6A1D931843618A00C7E285 /* LEDAppDelegate.m */,
+				FA6A1D951843618A00C7E285 /* Images.xcassets */,
+				FA6A1D8A1843618A00C7E285 /* Supporting Files */,
+			);
+			path = Ledger;
+			sourceTree = "<group>";
+		};
+		FA6A1D8A1843618A00C7E285 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A1D8B1843618A00C7E285 /* Ledger-Info.plist */,
+				FA6A1D8C1843618A00C7E285 /* InfoPlist.strings */,
+				FA6A1D8F1843618A00C7E285 /* main.m */,
+				FA6A1D911843618A00C7E285 /* Ledger-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA6A1DA21843618A00C7E285 /* LedgerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A1DA81843618A00C7E285 /* LedgerTests.m */,
+				FA6A1DA31843618A00C7E285 /* Supporting Files */,
+			);
+			path = LedgerTests;
+			sourceTree = "<group>";
+		};
+		FA6A1DA31843618A00C7E285 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A1DA41843618A00C7E285 /* LedgerTests-Info.plist */,
+				FA6A1DA51843618A00C7E285 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA6A1DB2184361B700C7E285 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A1DB3184361B700C7E285 /* Controllers */,
+				FA6A1DB4184361B700C7E285 /* Model */,
+				FA6A1DB5184361B700C7E285 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FA6A1DB3184361B700C7E285 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A1DB91843622D00C7E285 /* LEDAccountsViewController.h */,
+				FA6A1DBA1843622D00C7E285 /* LEDAccountsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA6A1DB4184361B700C7E285 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A1DBF1843640000C7E285 /* LEDAccount.h */,
+				FA6A1DC01843640000C7E285 /* LEDAccount.m */,
+				FA6A1DC2184365E700C7E285 /* LEDTransaction.h */,
+				FA6A1DC3184365E700C7E285 /* LEDTransaction.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA6A1DB5184361B700C7E285 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A1DBC1843624200C7E285 /* LEDAccountsView.h */,
+				FA6A1DBD1843624200C7E285 /* LEDAccountsView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA6A1D7F1843618A00C7E285 /* Ledger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6A1DAC1843618A00C7E285 /* Build configuration list for PBXNativeTarget "Ledger" */;
+			buildPhases = (
+				FA6A1D7C1843618A00C7E285 /* Sources */,
+				FA6A1D7D1843618A00C7E285 /* Frameworks */,
+				FA6A1D7E1843618A00C7E285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ledger;
+			productName = Ledger;
+			productReference = FA6A1D801843618A00C7E285 /* Ledger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA6A1D9A1843618A00C7E285 /* LedgerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6A1DAF1843618A00C7E285 /* Build configuration list for PBXNativeTarget "LedgerTests" */;
+			buildPhases = (
+				FA6A1D971843618A00C7E285 /* Sources */,
+				FA6A1D981843618A00C7E285 /* Frameworks */,
+				FA6A1D991843618A00C7E285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA6A1DA11843618A00C7E285 /* PBXTargetDependency */,
+			);
+			name = LedgerTests;
+			productName = LedgerTests;
+			productReference = FA6A1D9B1843618A00C7E285 /* LedgerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA6A1D781843618A00C7E285 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LED;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = VXT;
+				TargetAttributes = {
+					FA6A1D9A1843618A00C7E285 = {
+						TestTargetID = FA6A1D7F1843618A00C7E285;
+					};
+				};
+			};
+			buildConfigurationList = FA6A1D7B1843618A00C7E285 /* Build configuration list for PBXProject "Ledger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA6A1D771843618A00C7E285;
+			productRefGroup = FA6A1D811843618A00C7E285 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA6A1D7F1843618A00C7E285 /* Ledger */,
+				FA6A1D9A1843618A00C7E285 /* LedgerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA6A1D7E1843618A00C7E285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A1D8E1843618A00C7E285 /* InfoPlist.strings in Resources */,
+				FA6A1D961843618A00C7E285 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6A1D991843618A00C7E285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A1DA71843618A00C7E285 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA6A1D7C1843618A00C7E285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A1DC4184365E700C7E285 /* LEDTransaction.m in Sources */,
+				FA6A1DC11843640000C7E285 /* LEDAccount.m in Sources */,
+				FA6A1DBE1843624200C7E285 /* LEDAccountsView.m in Sources */,
+				FA6A1D941843618A00C7E285 /* LEDAppDelegate.m in Sources */,
+				FA6A1D901843618A00C7E285 /* main.m in Sources */,
+				FA6A1DBB1843622D00C7E285 /* LEDAccountsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA6A1D971843618A00C7E285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6A1DA91843618A00C7E285 /* LedgerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA6A1DA11843618A00C7E285 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA6A1D7F1843618A00C7E285 /* Ledger */;
+			targetProxy = FA6A1DA01843618A00C7E285 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA6A1D8C1843618A00C7E285 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6A1D8D1843618A00C7E285 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA6A1DA51843618A00C7E285 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6A1DA61843618A00C7E285 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA6A1DAA1843618A00C7E285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA6A1DAB1843618A00C7E285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA6A1DAD1843618A00C7E285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ledger/Ledger-Prefix.pch";
+				INFOPLIST_FILE = "Ledger/Ledger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA6A1DAE1843618A00C7E285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ledger/Ledger-Prefix.pch";
+				INFOPLIST_FILE = "Ledger/Ledger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA6A1DB01843618A00C7E285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ledger.app/Ledger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ledger/Ledger-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LedgerTests/LedgerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FA6A1DB11843618A00C7E285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ledger.app/Ledger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ledger/Ledger-Prefix.pch";
+				INFOPLIST_FILE = "LedgerTests/LedgerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA6A1D7B1843618A00C7E285 /* Build configuration list for PBXProject "Ledger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6A1DAA1843618A00C7E285 /* Debug */,
+				FA6A1DAB1843618A00C7E285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6A1DAC1843618A00C7E285 /* Build configuration list for PBXNativeTarget "Ledger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6A1DAD1843618A00C7E285 /* Debug */,
+				FA6A1DAE1843618A00C7E285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA6A1DAF1843618A00C7E285 /* Build configuration list for PBXNativeTarget "LedgerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6A1DB01843618A00C7E285 /* Debug */,
+				FA6A1DB11843618A00C7E285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA6A1D781843618A00C7E285 /* Project object */;
+}

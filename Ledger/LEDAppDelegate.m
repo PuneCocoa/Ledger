@@ -8,12 +8,20 @@
 
 #import "LEDAppDelegate.h"
 
+#import "LEDAccountsViewController.h"
+
 @implementation LEDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    LEDAccountsViewController *accountsViewController = [[LEDAccountsViewController alloc] init];
+    UINavigationController *rootNavigationController = [[UINavigationController alloc] initWithRootViewController:accountsViewController];
+    
+    [self.window setRootViewController:rootNavigationController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

@@ -23,6 +23,10 @@
         [accountsTableView setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
         [self addSubview:accountsTableView];
         _accountsTableView = accountsTableView;
+        
+        [_accountsTableView setAccessibilityLabel:@"Accounts Table View"];
+        
+
     }
     return self;
 }

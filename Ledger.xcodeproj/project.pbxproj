@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59C425501843C2830019C545 /* LEDAccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C4254F1843C2830019C545 /* LEDAccountStore.m */; };
 		FA6A1D841843618A00C7E285 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D831843618A00C7E285 /* Foundation.framework */; };
 		FA6A1D861843618A00C7E285 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D851843618A00C7E285 /* CoreGraphics.framework */; };
 		FA6A1D881843618A00C7E285 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D871843618A00C7E285 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59C4254E1843C2830019C545 /* LEDAccountStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDAccountStore.h; sourceTree = "<group>"; };
+		59C4254F1843C2830019C545 /* LEDAccountStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDAccountStore.m; sourceTree = "<group>"; };
 		FA6A1D801843618A00C7E285 /* Ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6A1D831843618A00C7E285 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA6A1D851843618A00C7E285 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -183,6 +186,8 @@
 				FA6A1DC01843640000C7E285 /* LEDAccount.m */,
 				FA6A1DC2184365E700C7E285 /* LEDTransaction.h */,
 				FA6A1DC3184365E700C7E285 /* LEDTransaction.m */,
+				59C4254E1843C2830019C545 /* LEDAccountStore.h */,
+				59C4254F1843C2830019C545 /* LEDAccountStore.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				FA6A1D941843618A00C7E285 /* LEDAppDelegate.m in Sources */,
 				FA6A1D901843618A00C7E285 /* main.m in Sources */,
 				FA6A1DBB1843622D00C7E285 /* LEDAccountsViewController.m in Sources */,
+				59C425501843C2830019C545 /* LEDAccountStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +504,7 @@
 				FA6A1DAE1843618A00C7E285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA6A1DAF1843618A00C7E285 /* Build configuration list for PBXNativeTarget "LedgerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				FA6A1DB11843618A00C7E285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

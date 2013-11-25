@@ -11,9 +11,8 @@
 
 @interface LEDTransaction : NSObject
 
-+ (instancetype)transactionWithAccount:(LEDAccount *)account amount:(float)amount detail:(NSString *)detail;
++ (instancetype)transactionWithAmount:(float)amount detail:(NSString *)detail;
 
-- (LEDAccount *)account;
 - (float)amount;
 - (NSString *)detail;
 

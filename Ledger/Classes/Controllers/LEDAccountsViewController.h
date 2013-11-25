@@ -10,6 +10,5 @@
 
 @interface LEDAccountsViewController : UIViewController
 
-@property (strong, nonatomic) NSArray *accounts;
 
 @end

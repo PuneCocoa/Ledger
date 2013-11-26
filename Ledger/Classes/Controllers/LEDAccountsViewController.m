@@ -13,9 +13,11 @@
 #import "LEDAccount.h"
 #import "LEDTransaction.h"
 
-@interface LEDAccountsViewController () <UITableViewDataSource, UITableViewDelegate> {
+@interface LEDAccountsViewController () <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate> {
     
     LEDAccountStore *_accountStore;
+    
+    __weak LEDAccountsView *_accountsView;
 }
 
 - (void)touchAddAccount:(UIBarButtonItem *)barButtonItem;
@@ -33,9 +35,6 @@
     if (self != nil) {
         
         _accountStore = [[LEDAccountStore alloc] init];
-        
-        LEDAccount *anAccount = [LEDAccount accountWithName:@"Work"];
-        [_accountStore addAccount:anAccount];
     }
     
     return self;
@@ -56,9 +55,10 @@
     
     [self setTitle:@"Accounts"];
     
-    LEDAccountsView *theView = (LEDAccountsView *)self.view;
-    [[theView accountsTableView] setDataSource:self];
-    [[theView accountsTableView] setDelegate:self];
+    _accountsView = (LEDAccountsView *)self.view;
+    
+    [[_accountsView accountsTableView] setDataSource:self];
+    [[_accountsView accountsTableView] setDelegate:self];
     
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(touchAddAccount:)];
     [addButton setAccessibilityLabel:@"Add Account Button"];
@@ -70,11 +70,13 @@
 
 - (void)touchAddAccount:(UIBarButtonItem *)barButtonItem {
     
-    LEDAccount *anAccount = [LEDAccount accountWithName:@"New Account"];
-    [_accountStore addAccount:anAccount];
+    UIAlertView *accountNameAlertView = [[UIAlertView alloc] initWithTitle:@"Account Name" message:@"Enter a name for this account" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Confirm", nil];
     
-    LEDAccountsView *theView = (LEDAccountsView *)self.view;
-    [[theView accountsTableView] reloadData];
+    [accountNameAlertView setAlertViewStyle:UIAlertViewStylePlainTextInput];
+    
+    [accountNameAlertView setAccessibilityLabel:@"Account Name Alert"];
+    
+    [accountNameAlertView show];
     
 }
 
@@ -114,6 +116,47 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
+}
+
+#pragma mark - UIAlertViewDelegate methods
+
+- (BOOL)alertViewShouldEnableFirstOtherButton:(UIAlertView *)alertView {
+    
+    BOOL shouldEnable = YES;
+    
+    if (alertView.alertViewStyle == UIAlertViewStylePlainTextInput) {
+        
+        shouldEnable = NO;
+        
+        UITextField *textField = [alertView textFieldAtIndex:0];
+        
+        if (textField.text.length > 0) {
+            
+            shouldEnable = YES;
+        }
+    }
+    
+    return shouldEnable;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == 1) {
+        
+        UITextField *accountNameField = [alertView textFieldAtIndex:0];
+        
+        NSString *accountName = accountNameField.text;
+        
+        if (accountName.length > 0) {
+            
+            LEDAccount *anAccount = [LEDAccount accountWithName:accountName];
+            
+            [_accountStore addAccount:anAccount];
+            
+            [[_accountsView accountsTableView] reloadData];
+            
+        }
+    }
 }
 
 

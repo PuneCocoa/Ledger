@@ -7,16 +7,16 @@
 //
 
 #import "LEDAccountsViewController.h"
-
 #import "LEDAccountsView.h"
+
 #import "LEDAccountStore.h"
 #import "LEDAccount.h"
 #import "LEDTransaction.h"
+#import "LEDAccountDetailViewController.h"
 
 @interface LEDAccountsViewController () <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate> {
     
     LEDAccountStore *_accountStore;
-    
     __weak LEDAccountsView *_accountsView;
 }
 
@@ -48,14 +48,36 @@
     
 }
 
+- (void)setView:(UIView *)view {
+    
+    [super setView:view];
+    
+    if ([view isKindOfClass:[LEDAccountsView class]]) {
+        
+        _accountsView = (LEDAccountsView *)self.view;
+        
+    } else {
+        
+        _accountsView = nil;
+        
+        NSLog(@"%@ warning: View is not of type %@", [self class], [LEDAccountsView class]);
+        
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
     [self setTitle:@"Accounts"];
     
-    _accountsView = (LEDAccountsView *)self.view;
+    if ([self.view isKindOfClass:[LEDAccountsView class]]) {
+        
+        _accountsView = (LEDAccountsView *)self.view;
+    } else {
+        _accountsView = nil;
+    }
+
     
     [[_accountsView accountsTableView] setDataSource:self];
     [[_accountsView accountsTableView] setDelegate:self];
@@ -115,7 +137,13 @@
 #pragma mark - UITableViewDelegate methods
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    
+    LEDAccount *theAccount = [_accountStore.accounts objectAtIndex:indexPath.row];
+    
+    LEDAccountDetailViewController *accountDetailViewController = [[LEDAccountDetailViewController alloc] initWithAccount:theAccount];
+    [self.navigationController pushViewController:accountDetailViewController animated:YES];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark - UIAlertViewDelegate methods
@@ -152,6 +180,7 @@
             LEDAccount *anAccount = [LEDAccount accountWithName:accountName];
             
             [_accountStore addAccount:anAccount];
+            [_accountStore save];
             
             [[_accountsView accountsTableView] reloadData];
             

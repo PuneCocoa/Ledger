@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5956F4DD184515710055663A /* LEDAccountDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5956F4DC184515710055663A /* LEDAccountDetailViewController.m */; };
+		5956F4E0184515B00055663A /* LEDAccountDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5956F4DF184515B00055663A /* LEDAccountDetailView.m */; };
 		59C425501843C2830019C545 /* LEDAccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C4254F1843C2830019C545 /* LEDAccountStore.m */; };
 		FA6A1D841843618A00C7E285 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D831843618A00C7E285 /* Foundation.framework */; };
 		FA6A1D861843618A00C7E285 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D851843618A00C7E285 /* CoreGraphics.framework */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5956F4DB184515710055663A /* LEDAccountDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDAccountDetailViewController.h; sourceTree = "<group>"; };
+		5956F4DC184515710055663A /* LEDAccountDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDAccountDetailViewController.m; sourceTree = "<group>"; };
+		5956F4DE184515B00055663A /* LEDAccountDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDAccountDetailView.h; sourceTree = "<group>"; };
+		5956F4DF184515B00055663A /* LEDAccountDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDAccountDetailView.m; sourceTree = "<group>"; };
 		59C4254E1843C2830019C545 /* LEDAccountStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDAccountStore.h; sourceTree = "<group>"; };
 		59C4254F1843C2830019C545 /* LEDAccountStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDAccountStore.m; sourceTree = "<group>"; };
 		FA6A1D801843618A00C7E285 /* Ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +181,8 @@
 			children = (
 				FA6A1DB91843622D00C7E285 /* LEDAccountsViewController.h */,
 				FA6A1DBA1843622D00C7E285 /* LEDAccountsViewController.m */,
+				5956F4DB184515710055663A /* LEDAccountDetailViewController.h */,
+				5956F4DC184515710055663A /* LEDAccountDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -197,6 +205,8 @@
 			children = (
 				FA6A1DBC1843624200C7E285 /* LEDAccountsView.h */,
 				FA6A1DBD1843624200C7E285 /* LEDAccountsView.m */,
+				5956F4DE184515B00055663A /* LEDAccountDetailView.h */,
+				5956F4DF184515B00055663A /* LEDAccountDetailView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,6 +313,8 @@
 				FA6A1D941843618A00C7E285 /* LEDAppDelegate.m in Sources */,
 				FA6A1D901843618A00C7E285 /* main.m in Sources */,
 				FA6A1DBB1843622D00C7E285 /* LEDAccountsViewController.m in Sources */,
+				5956F4DD184515710055663A /* LEDAccountDetailViewController.m in Sources */,
+				5956F4E0184515B00055663A /* LEDAccountDetailView.m in Sources */,
 				59C425501843C2830019C545 /* LEDAccountStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

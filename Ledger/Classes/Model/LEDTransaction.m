@@ -13,15 +13,17 @@
 
     float _amount;
     NSString *_detail;
+    NSDate *_date;
 }
 
-+ (instancetype)transactionWithAmount:(float)amount detail:(NSString *)detail {
++ (instancetype)transactionWithAmount:(float)amount detail:(NSString *)detail date:(NSDate *)date {
 
     LEDTransaction *transaction = [[self class] new];
 
     transaction->_amount = amount;
     transaction->_detail = [detail copy];
-
+    transaction->_date = date;
+    
     return transaction;
 }
 
@@ -36,5 +38,11 @@
 
     return _detail;
 }
+
+- (NSDate *)date {
+    
+    return _date;
+}
+
 
 @end

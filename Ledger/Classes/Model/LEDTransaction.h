@@ -11,9 +11,9 @@
 
 @interface LEDTransaction : NSObject
 
-+ (instancetype)transactionWithAmount:(float)amount detail:(NSString *)detail date:(NSDate *)date;
++ (instancetype)transactionWithAmount:(double)amount detail:(NSString *)detail date:(NSDate *)date;
 
-- (float)amount;
+- (double)amount;
 - (NSString *)detail;
 - (NSDate *)date;
 

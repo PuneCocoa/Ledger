@@ -11,12 +11,12 @@
 
 @implementation LEDTransaction {
 
-    float _amount;
+    double _amount;
     NSString *_detail;
     NSDate *_date;
 }
 
-+ (instancetype)transactionWithAmount:(float)amount detail:(NSString *)detail date:(NSDate *)date {
++ (instancetype)transactionWithAmount:(double)amount detail:(NSString *)detail date:(NSDate *)date {
 
     LEDTransaction *transaction = [[self class] new];
 
@@ -28,7 +28,7 @@
 }
 
 
-- (float)amount {
+- (double)amount {
     
     return _amount;
     

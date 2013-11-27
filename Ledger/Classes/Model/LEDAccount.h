@@ -14,9 +14,9 @@
 
 + (instancetype)accountWithName:(NSString *)name;
 
-- (float)balance;
-- (float)totalDeposits;
-- (float)totalWithdrawals;
+- (double)balance;
+- (double)totalDeposits;
+- (double)totalWithdrawals;
 
 - (NSArray *)transactions;
 - (void)addTransaction:(LEDTransaction *)aTransaction;

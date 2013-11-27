@@ -27,14 +27,14 @@
 
 #pragma mark - Public methods
 
-- (float)balance {
+- (double)balance {
     
     return [self totalDeposits] - [self totalWithdrawals];
 }
 
-- (float)totalDeposits {
+- (double)totalDeposits {
     
-    float totalDeposits = 0.0f;
+    double totalDeposits = 0.0f;
     
     for (LEDTransaction *aTransaction in self.transactions) {
         if (aTransaction.amount > 0) {
@@ -45,9 +45,9 @@
     return totalDeposits;
 }
 
-- (float)totalWithdrawals {
+- (double)totalWithdrawals {
     
-    float totalWithdrawals = 0.0f;
+    double totalWithdrawals = 0.0f;
     
     for (LEDTransaction *aTransaction in self.transactions) {
         
@@ -61,7 +61,10 @@
 }
 
 - (NSArray *)transactions {
-    
+
+    NSSortDescriptor *sortDescendingByDate = [NSSortDescriptor sortDescriptorWithKey:@"date" ascending:NO];
+    [_transactions sortUsingDescriptors:@[sortDescendingByDate]];
+
     return _transactions;
 }
 

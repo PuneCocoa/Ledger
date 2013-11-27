@@ -60,7 +60,7 @@
         
         _accountsView = nil;
         
-        NSLog(@"%@ warning: View is not of type %@", [self class], [LEDAccountsView class]);
+        NSLog(@"%@ warning: View is not of type %@", NSStringFromClass([self class]), NSStringFromClass([LEDAccountsView class]));
         
     }
 }
@@ -86,6 +86,12 @@
     [addButton setAccessibilityLabel:@"Add Account Button"];
     [self.navigationItem setRightBarButtonItem:addButton];
 
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    [[_accountsView accountsTableView] reloadData];
 }
 
 #pragma mark - Actions
@@ -140,7 +146,7 @@
     
     LEDAccount *theAccount = [_accountStore.accounts objectAtIndex:indexPath.row];
     
-    LEDAccountDetailViewController *accountDetailViewController = [[LEDAccountDetailViewController alloc] initWithAccount:theAccount];
+    LEDAccountDetailViewController *accountDetailViewController = [[LEDAccountDetailViewController alloc] initWithAccount:theAccount store:_accountStore];
     [self.navigationController pushViewController:accountDetailViewController animated:YES];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

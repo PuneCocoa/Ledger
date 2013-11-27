@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class LEDAccount;
+@class LEDAccountStore;
 
 @interface LEDAccountDetailViewController : UIViewController
 
-- (instancetype)initWithAccount:(LEDAccount *)account;
+- (instancetype)initWithAccount:(LEDAccount *)account store:(LEDAccountStore *)accountStore;
 
 @property (strong, nonatomic) LEDAccount *account;
+@property (strong, nonatomic) LEDAccountStore *accountStore;
 
 @end

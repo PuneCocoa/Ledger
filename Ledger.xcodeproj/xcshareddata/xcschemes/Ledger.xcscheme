@@ -37,11 +37,6 @@
                BlueprintName = "LedgerTests"
                ReferencedContainer = "container:Ledger.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "LedgerTests">
-               </Test>
-            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO">

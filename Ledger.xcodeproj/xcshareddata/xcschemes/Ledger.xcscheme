@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA6A1E37184602E500C7E285"
+               BlueprintIdentifier = "FA44C46318474E1900A0642F"
                BuildableName = "Ledger Acceptance Tests.octest"
                BlueprintName = "Ledger Acceptance Tests"
                ReferencedContainer = "container:Ledger.xcodeproj">

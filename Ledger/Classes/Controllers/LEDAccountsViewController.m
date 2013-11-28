@@ -137,6 +137,8 @@
     [cell setAccessibilityLabel:[NSString stringWithFormat:@"Account %@", theAccount.name]];
     
     [cell.detailTextLabel setText:[NSString stringWithFormat:@"Balance: %.2f", theAccount.balance]];
+
+    [cell.detailTextLabel setAccessibilityLabel:cell.detailTextLabel.text];
     
     return cell;
 }

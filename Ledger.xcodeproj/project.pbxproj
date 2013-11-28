@@ -10,6 +10,12 @@
 		5956F4DD184515710055663A /* LEDAccountDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5956F4DC184515710055663A /* LEDAccountDetailViewController.m */; };
 		5956F4E0184515B00055663A /* LEDAccountDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5956F4DF184515B00055663A /* LEDAccountDetailView.m */; };
 		59C425501843C2830019C545 /* LEDAccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C4254F1843C2830019C545 /* LEDAccountStore.m */; };
+		FA44C46618474E1900A0642F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA44C46518474E1900A0642F /* SenTestingKit.framework */; };
+		FA44C46718474E1900A0642F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D831843618A00C7E285 /* Foundation.framework */; };
+		FA44C46818474E1900A0642F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D871843618A00C7E285 /* UIKit.framework */; };
+		FA44C46E18474E1900A0642F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA44C46C18474E1900A0642F /* InfoPlist.strings */; };
+		FA44C47018474E1900A0642F /* Ledger_Acceptance_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA44C46F18474E1900A0642F /* Ledger_Acceptance_Tests.m */; };
+		FA44C47918474E4200A0642F /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA44C45B18474DEB00A0642F /* libKIF.a */; };
 		FA6A1D841843618A00C7E285 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D831843618A00C7E285 /* Foundation.framework */; };
 		FA6A1D861843618A00C7E285 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D851843618A00C7E285 /* CoreGraphics.framework */; };
 		FA6A1D881843618A00C7E285 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6A1D871843618A00C7E285 /* UIKit.framework */; };
@@ -29,6 +35,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FA44C45A18474DEB00A0642F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA44C45318474DEB00A0642F /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB72047C1680DDAD00278DA2;
+			remoteInfo = KIF;
+		};
+		FA44C45C18474DEB00A0642F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA44C45318474DEB00A0642F /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB60ECC1177F8C83005A041A;
+			remoteInfo = "Test Host";
+		};
+		FA44C45E18474DEB00A0642F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA44C45318474DEB00A0642F /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB60ECEB177F8DB3005A041A;
+			remoteInfo = "KIF Tests";
+		};
+		FA44C47218474E1900A0642F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA6A1D781843618A00C7E285 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA6A1D7F1843618A00C7E285;
+			remoteInfo = Ledger;
+		};
+		FA44C47718474E3D00A0642F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA44C45318474DEB00A0642F /* KIF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EB72043E1680DDAD00278DA2;
+			remoteInfo = KIF;
+		};
 		FA6A1DA01843618A00C7E285 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FA6A1D781843618A00C7E285 /* Project object */;
@@ -45,6 +86,13 @@
 		5956F4DF184515B00055663A /* LEDAccountDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDAccountDetailView.m; sourceTree = "<group>"; };
 		59C4254E1843C2830019C545 /* LEDAccountStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDAccountStore.h; sourceTree = "<group>"; };
 		59C4254F1843C2830019C545 /* LEDAccountStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDAccountStore.m; sourceTree = "<group>"; };
+		FA44C45318474DEB00A0642F /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = KIF/KIF.xcodeproj; sourceTree = "<group>"; };
+		FA44C46418474E1900A0642F /* Ledger Acceptance Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ledger Acceptance Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA44C46518474E1900A0642F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FA44C46B18474E1900A0642F /* Ledger Acceptance Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ledger Acceptance Tests-Info.plist"; sourceTree = "<group>"; };
+		FA44C46D18474E1900A0642F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA44C46F18474E1900A0642F /* Ledger_Acceptance_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ledger_Acceptance_Tests.m; sourceTree = "<group>"; };
+		FA44C47118474E1900A0642F /* Ledger Acceptance Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ledger Acceptance Tests-Prefix.pch"; sourceTree = "<group>"; };
 		FA6A1D801843618A00C7E285 /* Ledger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ledger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6A1D831843618A00C7E285 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA6A1D851843618A00C7E285 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +120,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FA44C46118474E1900A0642F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA44C47918474E4200A0642F /* libKIF.a in Frameworks */,
+				FA44C46618474E1900A0642F /* SenTestingKit.framework in Frameworks */,
+				FA44C46818474E1900A0642F /* UIKit.framework in Frameworks */,
+				FA44C46718474E1900A0642F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA6A1D7D1843618A00C7E285 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,11 +154,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA44C45418474DEB00A0642F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA44C45B18474DEB00A0642F /* libKIF.a */,
+				FA44C45D18474DEB00A0642F /* Test Host.app */,
+				FA44C45F18474DEB00A0642F /* KIF Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA44C46918474E1900A0642F /* Ledger Acceptance Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FA44C46F18474E1900A0642F /* Ledger_Acceptance_Tests.m */,
+				FA44C46A18474E1900A0642F /* Supporting Files */,
+			);
+			path = "Ledger Acceptance Tests";
+			sourceTree = "<group>";
+		};
+		FA44C46A18474E1900A0642F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA44C46B18474E1900A0642F /* Ledger Acceptance Tests-Info.plist */,
+				FA44C46C18474E1900A0642F /* InfoPlist.strings */,
+				FA44C47118474E1900A0642F /* Ledger Acceptance Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		FA6A1D771843618A00C7E285 = {
 			isa = PBXGroup;
 			children = (
+				FA44C45318474DEB00A0642F /* KIF.xcodeproj */,
 				FA6A1D891843618A00C7E285 /* Ledger */,
 				FA6A1DA21843618A00C7E285 /* LedgerTests */,
+				FA44C46918474E1900A0642F /* Ledger Acceptance Tests */,
 				FA6A1D821843618A00C7E285 /* Frameworks */,
 				FA6A1D811843618A00C7E285 /* Products */,
 			);
@@ -110,6 +200,7 @@
 			children = (
 				FA6A1D801843618A00C7E285 /* Ledger.app */,
 				FA6A1D9B1843618A00C7E285 /* LedgerTests.xctest */,
+				FA44C46418474E1900A0642F /* Ledger Acceptance Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +212,7 @@
 				FA6A1D851843618A00C7E285 /* CoreGraphics.framework */,
 				FA6A1D871843618A00C7E285 /* UIKit.framework */,
 				FA6A1D9C1843618A00C7E285 /* XCTest.framework */,
+				FA44C46518474E1900A0642F /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +306,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FA44C46318474E1900A0642F /* Ledger Acceptance Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA44C47418474E1900A0642F /* Build configuration list for PBXNativeTarget "Ledger Acceptance Tests" */;
+			buildPhases = (
+				FA44C46018474E1900A0642F /* Sources */,
+				FA44C46118474E1900A0642F /* Frameworks */,
+				FA44C46218474E1900A0642F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA44C47818474E3D00A0642F /* PBXTargetDependency */,
+				FA44C47318474E1900A0642F /* PBXTargetDependency */,
+			);
+			name = "Ledger Acceptance Tests";
+			productName = "Ledger Acceptance Tests";
+			productReference = FA44C46418474E1900A0642F /* Ledger Acceptance Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		FA6A1D7F1843618A00C7E285 /* Ledger */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA6A1DAC1843618A00C7E285 /* Build configuration list for PBXNativeTarget "Ledger" */;
@@ -259,6 +370,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = VXT;
 				TargetAttributes = {
+					FA44C46318474E1900A0642F = {
+						TestTargetID = FA6A1D7F1843618A00C7E285;
+					};
 					FA6A1D9A1843618A00C7E285 = {
 						TestTargetID = FA6A1D7F1843618A00C7E285;
 					};
@@ -274,15 +388,54 @@
 			mainGroup = FA6A1D771843618A00C7E285;
 			productRefGroup = FA6A1D811843618A00C7E285 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FA44C45418474DEB00A0642F /* Products */;
+					ProjectRef = FA44C45318474DEB00A0642F /* KIF.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FA6A1D7F1843618A00C7E285 /* Ledger */,
 				FA6A1D9A1843618A00C7E285 /* LedgerTests */,
+				FA44C46318474E1900A0642F /* Ledger Acceptance Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		FA44C45B18474DEB00A0642F /* libKIF.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKIF.a;
+			remoteRef = FA44C45A18474DEB00A0642F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA44C45D18474DEB00A0642F /* Test Host.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Test Host.app";
+			remoteRef = FA44C45C18474DEB00A0642F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA44C45F18474DEB00A0642F /* KIF Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "KIF Tests.octest";
+			remoteRef = FA44C45E18474DEB00A0642F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		FA44C46218474E1900A0642F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA44C46E18474E1900A0642F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA6A1D7E1843618A00C7E285 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +456,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FA44C46018474E1900A0642F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA44C47018474E1900A0642F /* Ledger_Acceptance_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FA6A1D7C1843618A00C7E285 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,6 +491,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FA44C47318474E1900A0642F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA6A1D7F1843618A00C7E285 /* Ledger */;
+			targetProxy = FA44C47218474E1900A0642F /* PBXContainerItemProxy */;
+		};
+		FA44C47818474E3D00A0642F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KIF;
+			targetProxy = FA44C47718474E3D00A0642F /* PBXContainerItemProxy */;
+		};
 		FA6A1DA11843618A00C7E285 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FA6A1D7F1843618A00C7E285 /* Ledger */;
@@ -338,6 +509,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FA44C46C18474E1900A0642F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA44C46D18474E1900A0642F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		FA6A1D8C1843618A00C7E285 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -357,6 +536,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FA44C47518474E1900A0642F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ledger.app/Ledger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ledger Acceptance Tests/Ledger Acceptance Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ledger Acceptance Tests/Ledger Acceptance Tests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FA44C47618474E1900A0642F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ledger.app/Ledger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ledger Acceptance Tests/Ledger Acceptance Tests-Prefix.pch";
+				INFOPLIST_FILE = "Ledger Acceptance Tests/Ledger Acceptance Tests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		FA6A1DAA1843618A00C7E285 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -500,6 +723,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FA44C47418474E1900A0642F /* Build configuration list for PBXNativeTarget "Ledger Acceptance Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA44C47518474E1900A0642F /* Debug */,
+				FA44C47618474E1900A0642F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FA6A1D7B1843618A00C7E285 /* Build configuration list for PBXProject "Ledger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

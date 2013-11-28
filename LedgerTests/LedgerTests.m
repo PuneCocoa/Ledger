@@ -38,7 +38,7 @@
     double expectedBalance = 0;
 
     LEDAccount *testAccount1 = [LEDAccount accountWithName:@"Test1"];
-    NSString *accountName = @"Tes1";
+    NSString *accountName = @"Test1";
 
     XCTAssertTrue([[testAccount1 name] isEqualToString:accountName], @"Account name incorrect");
 

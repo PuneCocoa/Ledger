@@ -13,6 +13,7 @@
 @implementation LEDAccount {
     
     NSMutableArray *_transactions;
+    double _balance;
 }
 
 #pragma mark - Initialisation
@@ -28,8 +29,10 @@
 #pragma mark - Public methods
 
 - (double)balance {
+
+    return _balance;
     
-    return [self totalDeposits] - [self totalWithdrawals];
+//    return [self totalDeposits] - [self totalWithdrawals];
 }
 
 - (double)totalDeposits {
@@ -69,24 +72,30 @@
 }
 
 - (void)addTransaction:(LEDTransaction *)aTransaction {
-    
+
     if (_transactions == nil) {
         
         _transactions = [NSMutableArray new];
     }
     
     [_transactions addObject:aTransaction];
+
+    _balance += [aTransaction amount];
     
 }
 
 - (void)deleteTransaction:(LEDTransaction *)aTransaction {
     
     [_transactions removeObject:aTransaction];
+
+    _balance -= [aTransaction amount];
 }
 
 - (void)deleteAllTransactions {
     
     [_transactions removeAllObjects];
+
+    _balance = 0;
 }
 
 

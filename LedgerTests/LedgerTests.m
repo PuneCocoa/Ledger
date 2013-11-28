@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
+#import "LEDAccount.h"
+
 @interface LedgerTests : XCTestCase
 
 @end
@@ -28,7 +30,9 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    LEDAccount *anAccount = [LEDAccount accountWithName:@"Test"];
+
+    XCTAssertEqual([anAccount balance], 0, @"Account balance not correct");
 }
 
 @end

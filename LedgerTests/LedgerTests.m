@@ -31,8 +31,8 @@
 - (void)testExample
 {
     LEDAccount *anAccount = [LEDAccount accountWithName:@"Test"];
-
-    XCTAssertEqual([anAccount balance], 0, @"Account balance not correct");
+    double balance = 0;
+    XCTAssertEqual([anAccount balance], balance, @"Account balance not correct");
 }
 
 @end

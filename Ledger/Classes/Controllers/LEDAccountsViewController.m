@@ -179,7 +179,6 @@
     if (buttonIndex == 1) {
         
         UITextField *accountNameField = [alertView textFieldAtIndex:0];
-        
         NSString *accountName = accountNameField.text;
         
         if (accountName.length > 0) {
@@ -190,7 +189,7 @@
             [_accountStore save];
             
             [[_accountsView accountsTableView] reloadData];
-            
+
         }
     }
 }

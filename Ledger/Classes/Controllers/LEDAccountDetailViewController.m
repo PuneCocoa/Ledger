@@ -133,7 +133,8 @@
     LEDTransaction *theTransaction = [self.account transactions][[indexPath row]];
     
     [cell.textLabel setText:[theTransaction detail]];
-    [cell.textLabel setAccessibilityLabel:[NSString stringWithFormat:@"Account Detail Cell Title %@", [theTransaction detail]]];
+    
+    [cell setAccessibilityLabel:[NSString stringWithFormat:@"Account Detail Cell Title %@", [theTransaction detail]]];
     
     [cell.detailTextLabel setText:[NSString stringWithFormat:@"%.2f", [theTransaction amount]]];
     [cell.detailTextLabel setAccessibilityLabel:[NSString stringWithFormat:@"Account Detail Cell Amount %.2f", [theTransaction amount]]];

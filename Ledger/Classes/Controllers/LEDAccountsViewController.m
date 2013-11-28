@@ -133,7 +133,8 @@
     LEDAccount *theAccount = [_accountStore.accounts objectAtIndex:indexPath.row];
     
     [cell.textLabel setText:theAccount.name];
-    [cell.textLabel setAccessibilityLabel:[NSString stringWithFormat:@"Account %@", theAccount.name]];
+
+    [cell setAccessibilityLabel:[NSString stringWithFormat:@"Account %@", theAccount.name]];
     
     [cell.detailTextLabel setText:[NSString stringWithFormat:@"Balance: %.2f", theAccount.balance]];
     
